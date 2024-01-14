@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Text Analyzer</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <h1>Real-time Text Analyzer</h1>
+    <div>
+      <button id="wordModeBtn">Word Input</button>
+      <button id="paragraphModeBtn">Paragraph</button>
+    </div>
+    <div id="inputContainer">
+      <textarea id="textInput" placeholder="Start typing..."></textarea>
+    </div>
+    <!-- <textarea id="textInput" placeholder="Start typing..."></textarea> -->
+    <div id="wordMetrics">
+      <p>Number of Characters: <span id="charCount1">0</span></p>
+      <p>Number of Words: <span id="wordCount1">0</span></p>
+    </div>
+    <div id="paragraphMetrics">
+      <p>Number of Characters: <span id="charCount">0</span></p>
+      <p>Number of Words: <span id="wordCount">0</span></p>
+      <p>Number of Sentences: <span id="sentenceCount">0</span></p>
+      <p>Number of Paragraphs: <span id="paragraphCount">0</span></p>
+      <p>Number of Spaces: <span id="spaceCount">0</span></p>
+      <p>Number of Punctuations: <span id="punctuationCount">0</span></p>
+    </div>
+
+    <div id="wordDetails">
+      <h2>Word Details</h2>
+      <p><strong>Word:</strong> <span id="word"></span></p>
+      <p><strong>Definition:</strong> <span id="definition"></span></p>
+      <p><strong>Part of Speech:</strong> <span id="partOfSpeech"></span></p>
+      <p><strong>Synonyms:</strong> <span id="synonyms"></span></p>
+      <p><strong>typeOf:</strong> <span id="typeOf"></span></p>
+      <p><strong>Examples:</strong> <span id="examples"></span></p>
+      
+    </div>
+    <!-- <script src="js/textanalyzer.js"></script> -->
+  </body>
+</html>
